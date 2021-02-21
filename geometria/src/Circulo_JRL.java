@@ -6,6 +6,10 @@ public class Circulo_JRL extends FiguraGeometrica_JRL {
 	
 	public Circulo_JRL(double r, String tipoFigura) {
 		super(tipoFigura);
+		
+		if (r<0) {
+			r=r*-1;
+		}
 		radio = r;
 	}
 
